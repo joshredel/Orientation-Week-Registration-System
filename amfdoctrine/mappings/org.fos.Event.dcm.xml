@@ -1,0 +1,68 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+	
+	<entity name="org\fos\Event" table="Events">
+		<id name="id" type="integer" column="EventID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="eventName" column="EventName" type="string" />
+		<field name="category" column="Category" type="string" />
+		<field name="faculty" column="Faculty" type="string" />
+		<field name="livingStyle" column="LivingStyle" type="string" />
+		<field name="description" column="Description" type="text" />
+		<field name="priceBreakdown" column="PriceBreakdown" type="text" />
+		<field name="startDate" column="StartDate" type="datetime" />
+		<field name="endDate" column="EndDate" type="datetime" />
+		<field name="location" column="Location" type="string" />
+		<field name="registrationOpenDate" column="RegistrationOpenDate" type="datetime" />
+		<field name="registrationCloseDate" column="RegistrationCloseDate" type="datetime" />
+		<field name="paypalBusiness" column="PaypalBusiness" type="string" />
+		<field name="participantCap" column="ParticipantCap" type="integer" />
+		<field name="hostedBy" column="Host" type="string" />		
+		<field name="website" column="Website" type="string" />
+		<field name="email" column="Email" type="string" />
+		<field name="logoFileName" column="LogoFileName" type="string" />
+		<field name="customFields" column="CustomFields" type="text" />
+		<field name="acceptedPayments" column="AcceptedPayments" type="string" />
+		<field name="action" column="Action" type="string" />
+		<field name="bursaryNotice" column="BursaryNotice" type="text" />
+		<field name="hasSelectableEvents" column="HasSelectableEvents" type="integer" />
+		<field name="displayType" column="DisplayType" type="string" />
+        
+        
+		<one-to-many field="options" target-entity="Event" mapped-by="parentEvent" />
+        
+        <one-to-many field="payments" target-entity="Payment" mapped-by="event" />
+        
+        <one-to-many field="roles" target-entity="Role" mapped-by="event" />
+        
+        <one-to-many field="checkIns" target-entity="CheckIn" mapped-by="event" />
+		
+		<one-to-many field="calendarEvents" target-entity="CalendarEvent" mapped-by="event" />
+        
+        <!--<one-to-many field="participants" target-entity="Participant" mapped-by="event" />-->
+        <many-to-many field="participants" target-entity="Participant">
+			<join-table name="Events_Participants">
+				<join-columns>
+					<join-column name="EventID" referenced-column-name="EventID" />
+				</join-columns>
+				<inverse-join-columns>
+					<join-column name="ParticipantID" referenced-column-name="ParticipantID" />
+				</inverse-join-columns>
+			</join-table>
+		</many-to-many>
+        
+        <one-to-many field="costs" target-entity="Cost" mapped-by="event" />
+		
+		<one-to-many field="staffs" target-entity="Staff" mapped-by="event" />
+		
+		<many-to-one field="parentEvent" target-entity="Event" inversed-by="options">
+			<join-column name="ParentEventID" referenced-column-name="EventID" />
+		</many-to-one>
+        
+	</entity>
+	
+</doctrine-mapping>

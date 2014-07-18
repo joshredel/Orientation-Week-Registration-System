@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show OSKB</title>
+</head>
+<body>
+	<h1>Keyboard Test</h1>
+    
+    <div id="showKeyboard">Open Keyboard</div>
+    <br /><br />
+    <input id="freeText" type="text" />
+    
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    //<![CDATA[
+        
+        $("#showKeyboard").click(function() {
+            var e = jQuery.Event("keydown");
+			e.which = 161; // # Some key code value
+			e.keyCode = 161;
+			
+			//alert( "Keyboard clicked." );
+			//$("#freeText").focus();
+            //$("#freeText").trigger(e);
+			$("#freeText").focus();
+			$("#freeText").trigger(e);
+        });
+    //]]>
+    </script>
+</body>
+</html>

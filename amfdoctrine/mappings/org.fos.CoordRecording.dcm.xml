@@ -1,0 +1,18 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+	
+	<entity name="org\fos\CoordRecording" table="CoordRecordings">
+		<id name="id" type="integer" column="RecordingID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="eventId" column="EventID" type="integer" />
+		<field name="submitterId" column="SubmitterID" type="integer" />
+		<field name="messageDate" column="MessageDate" type="datetime" />
+		<field name="url" column="Url" type="string" />
+		<field name="recordingCategory" column="RecordingCategory" type="string" />
+	</entity>
+	
+</doctrine-mapping>

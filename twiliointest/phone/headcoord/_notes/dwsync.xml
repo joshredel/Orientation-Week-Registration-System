@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="index.php" server="orientation.ssmu.mcgill.ca/html/" local="130223063316124905" remote="130223063310000000" Dst="2" />
+<file name="handleIndex.php" server="orientation.ssmu.mcgill.ca/html/" local="130223063604603162" remote="130223063600000000" Dst="2" />
+<file name="handleRecordingCall.php" server="orientation.ssmu.mcgill.ca/html/" local="130222802655775030" remote="130223261790000000" Dst="2" />
+<file name="handleContactHeadCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222324295719686" remote="130222324520000000" Dst="2" />
+<file name="handleContactHeadCoordsRecording.php" server="orientation.ssmu.mcgill.ca/html/" local="130223515593543032" remote="130223515560000000" Dst="2" />
+<file name="handleFeedback.php" server="orientation.ssmu.mcgill.ca/html/" local="130222322026917666" remote="130222322250000000" Dst="2" />
+<file name="feedback.php" server="orientation.ssmu.mcgill.ca/html/" local="130222322271716117" remote="130222322500000000" Dst="2" />
+<file name="contactHeadCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222380377031810" remote="130222380600000000" Dst="2" />
+<file name="contactCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222380126803045" remote="130222380350000000" Dst="2" />
+<file name="handleContactCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222333874120653" remote="130222334100000000" Dst="2" />
+<file name="handleContactCoordsRecording.php" server="orientation.ssmu.mcgill.ca/html/" local="130223510552998682" remote="130223510520000000" Dst="2" />
+<file name="handleConferenceCallCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222339640839963" remote="130222339870000000" Dst="2" />
+<file name="contactStaff.php" server="orientation.ssmu.mcgill.ca/html/" local="130222348717010238" remote="130222348940000000" Dst="2" />
+<file name="handleContactStaffRecording.php" server="orientation.ssmu.mcgill.ca/html/" local="130223519700820686" remote="130223519670000000" Dst="2" />
+<file name="contactParticipants.php" server="orientation.ssmu.mcgill.ca/html/" local="130222361077501248" remote="130222361300000000" Dst="2" />
+<file name="handleContactParticipantsRecording.php" server="orientation.ssmu.mcgill.ca/html/" local="130222365751618325" remote="130222365980000000" Dst="2" />
+<file name="handleContactParticipantsConfirmation.php" server="orientation.ssmu.mcgill.ca/html/" local="130223522416416217" remote="130223522390000000" Dst="2" />
+<file name="handleConferenceCallHeadCoords.php" server="orientation.ssmu.mcgill.ca/html/" local="130222332087401789" remote="130222374270000000" Dst="2" />
+<file name="handleContactCoordsConference.php" server="orientation.ssmu.mcgill.ca/html/" local="130223475284262078" remote="130223475260000000" Dst="2" />
+<file name="handleContactHeadCoordsConference.php" server="orientation.ssmu.mcgill.ca/html/" local="130223062867091320" remote="130223062860000000" Dst="2" />
+<file name="handleSmsStaffManual.php" server="orientation.ssmu.mcgill.ca/html/" local="130223082453738317" remote="130223082440000000" Dst="2" />
+</dwsync>

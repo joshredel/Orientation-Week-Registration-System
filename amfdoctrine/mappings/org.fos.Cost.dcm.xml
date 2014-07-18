@@ -1,0 +1,22 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping-2.0.xsd">
+	
+	<entity name="org\fos\Cost" table="Costs">
+		<id name="id" type="integer" column="CostID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="amount" column="Amount" type="decimal" />
+		<field name="summary" column="Summary" type="text" />
+		<field name="isAdminFee" column="IsAdminFee" type="integer" />
+		<field name="isOptional" column="IsOptional" type="integer" />
+		<field name="adminEventId" column="AdminEventID" type="integer" />
+		
+		<many-to-one field="event" target-entity="Event" inversed-by="costs">
+			<join-column name="EventID" referenced-column-name="EventID" />
+		</many-to-one>
+	</entity>
+	
+</doctrine-mapping>

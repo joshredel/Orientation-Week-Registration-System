@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Insert Your Custom Styles Below. All styles located in this file will
+   override existing main.css stylesheets.
+   ========================================================================== */ 
+
+/* used on FAQ to prevent text select */
+#toggle-section a.toggler {
+	/*display:none;*/
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #666666;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#toggle-section p.collapse {
+	margin-top: -12px;
+	background-color: #F8F8F8;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#toggle-section p.lead {
+	padding-top: 15px;
+	margin-bottom: 5px;
+}
+
+/* sets a wide popover */
+.popover {
+	max-width:450px;
+}
+
+/* used in event listings to better align listing */
+h2.event-header {
+	padding-bottom: 2px;
+}
+
+/* used in event listings to bring elements closer together */
+.event-sink {
+	margin-top: -10px;
+}
+
+/* allows an accordiant to be completely hidden when it is minimized */
+.event-accordian-group {
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+
+/* adds the background to the registration pages */
+body.sign-up {
+	background-image: url("/images/frontend/registration.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* removes the background from the sign up page area */
+.sign-up-page {
+	background: none;
+}
+
+/* sets a transparent background for the registration container */
+.sign-up-page .sign-up {
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	background: rgba(225, 225, 225, 0.85); /*f5f5f5*/
+}
+
+/* restores a white background for the accordians in the sign up container */
+.sign-up .accordion-body {
+	background-color: #FFFFFF;
+}
+
+/* restores a white background for the pricing table in the sign up container */
+.sign-up .pricing-table {
+	background-color: #FFFFFF;
+}
+
+/* decreases the padding in boxed areas in accordians */
+.accordion-body .boxed {
+	padding: 10px;
+}
+
+/* decreases the padding in boxed areas in sign up */
+.sign-up .boxed {
+	padding: 10px;
+}
+
+/* makes a button red */
+.red-btn {
+	background-color: #B90504;
+	background-image: -moz-linear-gradient(top, #B90504, #B90504);
+	background-image: -ms-linear-gradient(top, #B90504, #B90504);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B90504), to(#B90504));
+	background-image: -webkit-linear-gradient(top, #B90504, #B90504);
+	background-image: -o-linear-gradient(top, #B90504, #B90504);
+	background-image: linear-gradient(top, #B90504, #B90504);
+}
+
+.red-btn:hover,
+.red-btn:focus,
+.red-btn:active { 
+  background-color: #E60003;
+  background-image: -moz-linear-gradient(top, #E60003, #E60003);
+  background-image: -ms-linear-gradient(top, #E60003, #E60003);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E60003), to(#E60003));
+  background-image: -webkit-linear-gradient(top, #E60003, #E60003);
+  background-image: -o-linear-gradient(top, #E60003, #E60003);
+  background-image: linear-gradient(top, #E60003, #E60003);
+}
+
+#float-menu {
+/*	position: fixed;*/
+}
+
+/* used in the completion guide to make the buttons list nicely */
+.guide-btn {
+	margin-bottom:4px;
+	width:100%;
+}
+
+.events-sidebar.affix {
+	top: 20px;
+}
+
+.affix {
+	position: fixed;
+}
+
+/* makes a button gray */
+.event-opener.gray-reg {
+	background-color: #666666;
+	border-bottom-color: #333333;
+}
+
+.event-opener.gray-reg:hover { 
+  background-color: #222222;
+}
+	

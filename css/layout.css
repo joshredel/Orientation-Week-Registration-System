@@ -1,0 +1,520 @@
+/*
+ * Used by the administration and kiosk subsites. (Not any front end content.)
+ */
+
+html, body, div, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #808080;
+}
+
+* {
+	font-family: "Century Gothic", sans-serif;
+}
+
+*.hide {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.red-text {
+	color: red;
+}
+
+div#container {
+    position: relative;
+    margin: auto;
+    margin-bottom:40px;
+    min-height: 100%;
+    width: 900px;
+    border-left: 1px solid #585858;
+    border-right: 1px solid #585858;
+    background-color: #E6E6E6;
+    box-shadow: 0px 0px 7px #000;
+    -webkit-box-shadow: 0px 0px 7px #000;
+    -moz-box-shadow: 0px 0px 7px #000;
+}
+
+div#header {
+    position: relative;
+    margin: auto;
+    height: 113px;
+    width: 928px;
+    top: 12px;
+    left: -15px;
+    border-radius: 6px;
+    background-color: #BE2731;
+    box-shadow: 0px 3px 7px #000;
+    -webkit-box-shadow: 0px 3px 7px #000;
+    -moz-box-shadow: 0px 3px 7px #000;
+    border: 1px solid black;
+        z-index: 200;
+}
+
+div.error {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+    width: 550px;
+    border: 1px solid rgba(170,0,0,0.8);
+    background-color: rgba(130,0,0,0.4);
+    -webkit-box-shadow: 0px 2px 3px grey;
+}
+
+div.good {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+    width: 550px;
+    border: 1px solid rgba(0,170,0,0.8);
+    background-color: rgba(0, 130, 0, 0.4);
+    -webkit-box-shadow: 0px 2px 3px grey;
+}
+
+div#header h1#title {
+    color: #E6E6E6;
+    font-size: 42pt;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+div#header h2#caption {
+    color: #999;
+    font-size: 24pt;
+    position: absolute;
+    top: 67px;
+    left: 75px;
+    
+}
+
+div#header p {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 22px;
+	text-align: right;
+}
+
+div#header p a {
+    color: white;
+    text-decoration: none;
+}
+
+div#header p a:hover {
+    text-decoration: underline;
+}
+
+
+div#topNav div.navButtonTop {
+    display: inline-block;
+    position: relative;
+    padding: 5px 28px 5px 28px;
+    border: 1px solid black;
+    margin: 0px;
+    margin-top: 12px;
+    left: 30px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0px 1px 5px #333;
+    -webkit-box-shadow: 0px 1px 5px #333;
+    -moz-box-shadow: 0px 1px 5px #333;
+    border: 1px solid rgba(100,100,100,0.7);
+    background-color: #999;
+    color: #444;
+}
+
+div#topNav div.current {
+    z-index: 500;
+    background-color: #BE2731;
+    position: relative;
+    padding: 5px 28px 7px 28px;
+    top: -2px;
+    border: 1px solid black;
+    border-top: none;
+    -webkit-box-shadow: 0px 4px 5px #333;
+}
+
+div.navButton {
+    display: inline-block;
+    position: relative;
+    padding: 5px 28px 5px 28px;
+    border: 1px solid black;
+    margin: 0px;
+    margin-top: 12px;
+    left: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px #333;
+    -webkit-box-shadow: 0px 1px 5px #333;
+    -moz-box-shadow: 0px 1px 5px #333;
+    border: 1px solid rgba(100,100,100,0.7);
+    background-color: #999;
+    color: #444;
+}
+
+div#secondNav div.current a {
+    color: #ddd;
+}
+    
+div#secondNav  a {
+    text-decoration: none;
+    color: #444;
+    height: 100%;
+    width: 100%;
+}
+
+div#secondNav div.current {
+    z-index: 500;
+    background-color: #BE2731;
+    position: relative;
+    padding: 5px 28px 7px 28px;
+    top: -2px;
+	color: #ccc;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 4px 5px #333;
+}
+
+div#topNav div.current a {
+    color: #ddd;
+}
+    
+div#topNav  a {
+    text-decoration: none;
+    color: #444;
+    height: 100%;
+    width: 100%;
+}
+
+div#topNav  a:visited {
+    text-decoration: none;
+    color: #444;
+    height: 100%;
+    width: 100%;
+}
+
+div#loginPane {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    height: 258px;
+    width: 393px;
+    border-radius: 6px;
+    background-color: #ccc;
+    box-shadow: 0px 1px 5px #000;
+    -webkit-box-shadow: 0px 1px 5px #000;
+    -moz-box-shadow: 0px 1px 5px #000;
+    border: 1px solid rgba(100,100,100,0.7);
+    
+}
+
+div#loginPane div#loginHeader {
+    position: relative;
+    margin: auto;
+    height: 53px;
+    width: 413px;
+    top: 12px;;
+    left: -10px;
+    border-radius: 6px;
+    background-color: #BE2731;
+    box-shadow: 0px 3px 7px #000;
+    -webkit-box-shadow: 0px 3px 7px #000;
+    -moz-box-shadow: 0px 3px 7px #000;
+    border: 1px solid black;
+}
+
+div#loginPane div#loginHeader h1 {
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+}
+
+div#loginPane input:not(.button) {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 28px;
+    left: 11px;
+    height: 25px;
+    width: 260px;
+    font-size: 14pt;
+    margin: 15px;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+
+.button {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 4px;
+}
+
+.redbutton {
+	display: block;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(0,200,0,0.3);
+    border: none;
+    border-radius: 4px;
+}
+
+.checkInTable {
+	font-size: 20px;
+}
+
+.checkInTable td {
+	padding: 5px;
+}
+
+.checkInTable .left-column {
+	font-weight: bold;
+	padding-right: 10px;
+	text-align: right;
+	vertical-align: text-top;
+}
+
+
+.menu td {
+	padding-bottom: 15px;
+}
+
+.menu .left-column {
+	padding-right: 10px;
+	text-align: right;
+	width: 115px;
+}
+
+.menu .left-column div {
+	width: 110px;
+	text-align: center;
+	
+}
+
+div#loginPane input.button {
+    position: absolute;
+    top: 199px;
+    width: 120px;
+    left: 260px;
+    font-size: 18px;
+}
+
+#content {
+    margin-top: 45px;
+    padding-bottom: 60px;
+}
+
+#content article {
+    position: relative;
+    margin: 15px 30px 15px 30px;
+}
+
+#content article header {
+    border-bottom: 3px solid rgba(170,0,0, 1);
+    margin-bottom: 14px;
+}
+
+#content article p {
+    margin-bottom: 8px;
+}
+
+#content table {
+    margin: auto;
+    width: 850px;
+	border-collapse: collapse;
+}
+
+#content #header-fixed { 
+    position: fixed; 
+    top: 0px; 
+	display:none;
+    background-color: #E6E6E6;
+	margin-left: 25px;
+}
+
+#content table th {
+    text-align: left;
+    border-bottom: 2px solid rgba(170,0,0, 1);
+}
+
+#content table td {
+    color: #444;
+}
+
+#content table td a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#content table td:nth-child(2) a{
+    font-weight: normal;
+}
+
+#content table tr:nth-child(even) {
+	background-color: #d6d6d6;
+}
+
+#content table td a:hover {
+    text-decoration: underline;
+}
+
+#content article div.left {
+    position: absolute;
+    left: 15px;
+    width: 390px;
+}
+
+#content article div.right {
+    position: absolute;
+    right: 15px;
+    width: 390px;
+   
+}
+
+#content article div header  {
+    border: none;
+    height: 33px;
+    vertical-align: bottom;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #aaa;
+}
+
+#content article div header h3 {
+    position: relative;
+    height: 20px;
+    top: 7px;
+}
+
+#content article div p {
+    position: relative;
+    left: 18px;
+}
+
+article#shirts {
+    height: 220px;
+}
+
+#content article div#alcohol header {
+    background-color: rgba(200, 0, 0, 0.5);
+}
+
+#content article#foodRestrictions {
+    height: 183px;
+}
+
+#content article#reports p {
+    margin: 20px;
+}
+
+#content article a {
+    color: #333;
+    text-decoration: none;
+/*    font-weight: bold;*/
+/*    font-size: 18px;*/
+}
+
+#content article p {
+    margin-top: 6px;
+    line-height: 20px;
+}
+
+#content article a:hover {
+    text-decoration: underline;
+}
+
+#content button.edit {
+    padding: 9px 17px;
+    font-size: 15px;
+}
+
+#content table#paySchedule {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+    -webkit-box-shadow: 0px 1px 3px black;
+}
+
+/*
+#content table#paySchedule td:nth-child(3) {
+    text-align: right;
+}
+*/
+
+#content table#paySchedule th {
+	padding-left: 10px;
+}
+
+#content table#paySchedule td {
+	padding-left: 14px;
+}
+
+#content table.innerTable {
+    width: 600px;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+    -webkit-box-shadow: 0px 1px 3px black;
+}
+
+#content table.innerTable th {
+	padding-left: 10px;
+}
+
+#content table.innerTable td {
+	padding-left: 14px;
+}
+
+#content form {
+    margin: auto;
+    width: 850px;
+}
+
+#content #filter {
+	width: 80%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 2px solid #eee;
+	background-color: #fcfcfc;
+	font-size: 16px;
+	padding: 8px;
+	margin-bottom: 25px;
+	font-family: "Century Gothic", sans-serif;
+}
+
+div#footer {
+    position: absolute;
+    height: 33px;
+    width: 918px;
+    bottom: 0px;
+    left: -10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #BE2731;
+    box-shadow: 0px 0px 7px #000;
+    -webkit-box-shadow: 0px 0px 7px #000;
+    -moz-box-shadow: 0px 0px 7px #000;
+    border: 1px solid black;
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AutoPagingIterator.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719326028" remote="130221423780000000" Dst="2" />
+<file name="Capability.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719386049" remote="130221423780000000" Dst="2" />
+<file name="HttpStream.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719436068" remote="130221423780000000" Dst="2" />
+<file name="InstanceResource.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719588951" remote="130221423780000000" Dst="2" />
+<file name="ListResource.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719701124" remote="130221423780000000" Dst="2" />
+<file name="Page.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719731178" remote="130221423780000000" Dst="2" />
+<file name="PartialApplicationHelper.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719761202" remote="130221423780000000" Dst="2" />
+<file name="RequestValidator.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719881256" remote="130221423780000000" Dst="2" />
+<file name="Resource.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419719931221" remote="130221423780000000" Dst="2" />
+<file name="RestException.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722515601" remote="130221423790000000" Dst="2" />
+<file name="TimeRangeResource.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722545688" remote="130221423790000000" Dst="2" />
+<file name="TinyHttp.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722585633" remote="130221423790000000" Dst="2" />
+<file name="Twiml.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722625592" remote="130221423790000000" Dst="2" />
+<file name="UsageResource.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722655656" remote="130221423790000000" Dst="2" />
+</dwsync>

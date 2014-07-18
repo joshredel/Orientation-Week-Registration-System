@@ -1,0 +1,29 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+	
+	<entity name="org\fos\PersonalEvent" table="PersonalEvents">
+		<id name="id" type="integer" column="PersonalEventID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="eventId" column="EventID" type="integer" />
+		<field name="title" column="Title" type="string" />
+		<field name="location" column="Location" type="string" />
+		<field name="notes" column="Notes" type="text" />
+		<field name="startTime" column="StartTime" type="datetime" />
+		<field name="endTime" column="EndTime" type="datetime" />
+        
+		
+		<many-to-one field="participant" target-entity="Participant" inversed-by="personalEvents">
+			<join-column name="ParticipantID" referenced-column-name="ParticipantID" />
+		</many-to-one>
+		
+		<many-to-one field="calendarEvent" target-entity="CalendarEvent" inversed-by="personalEvents">
+			<join-column name="CalendarEventID" referenced-column-name="CalendarEventID" />
+		</many-to-one>
+        
+	</entity>
+	
+</doctrine-mapping>

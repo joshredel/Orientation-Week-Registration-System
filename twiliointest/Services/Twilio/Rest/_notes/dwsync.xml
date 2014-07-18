@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Account.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720061280" remote="130221423780000000" Dst="2" />
+<file name="Accounts.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720091292" remote="130221423780000000" Dst="2" />
+<file name="Application.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720121298" remote="130221423780000000" Dst="2" />
+<file name="Applications.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720141308" remote="130221423780000000" Dst="2" />
+<file name="AuthorizedConnectApp.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720181382" remote="130221423780000000" Dst="2" />
+<file name="AuthorizedConnectApps.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720401077" remote="130221423780000000" Dst="2" />
+<file name="AvailablePhoneNumber.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720431089" remote="130221423780000000" Dst="2" />
+<file name="AvailablePhoneNumbers.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720698446" remote="130221423780000000" Dst="2" />
+<file name="Call.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720718465" remote="130221423780000000" Dst="2" />
+<file name="Calls.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720748513" remote="130221423780000000" Dst="2" />
+<file name="Conference.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720778522" remote="130221423780000000" Dst="2" />
+<file name="Conferences.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720798496" remote="130221423780000000" Dst="2" />
+<file name="ConnectApp.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720828758" remote="130221423780000000" Dst="2" />
+<file name="ConnectApps.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720848515" remote="130221423780000000" Dst="2" />
+<file name="IncomingPhoneNumber.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720868525" remote="130221423780000000" Dst="2" />
+<file name="IncomingPhoneNumbers.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720898537" remote="130221423790000000" Dst="2" />
+<file name="Member.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720931363" remote="130221423790000000" Dst="2" />
+<file name="Members.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720961453" remote="130221423790000000" Dst="2" />
+<file name="Notification.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419720981463" remote="130221423790000000" Dst="2" />
+<file name="Notifications.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721001437" remote="130221423790000000" Dst="2" />
+<file name="OutgoingCallerId.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721358361" remote="130221423790000000" Dst="2" />
+<file name="OutgoingCallerIds.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721418382" remote="130221423790000000" Dst="2" />
+<file name="Participant.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721468434" remote="130221423790000000" Dst="2" />
+<file name="Participants.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721518450" remote="130221423790000000" Dst="2" />
+<file name="Queue.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721568442" remote="130221423790000000" Dst="2" />
+<file name="Queues.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721618464" remote="130221423790000000" Dst="2" />
+<file name="Recording.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721678551" remote="130221423790000000" Dst="2" />
+<file name="Recordings.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721698555" remote="130221423790000000" Dst="2" />
+<file name="Sandbox.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419721718496" remote="130221423790000000" Dst="2" />
+<file name="ShortCode.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722111315" remote="130221423790000000" Dst="2" />
+<file name="ShortCodes.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722147621" remote="130221423790000000" Dst="2" />
+<file name="SmsMessage.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722167637" remote="130221423790000000" Dst="2" />
+<file name="SmsMessages.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722197703" remote="130221423790000000" Dst="2" />
+<file name="Transcription.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722227661" remote="130221423790000000" Dst="2" />
+<file name="Transcriptions.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722353571" remote="130221423790000000" Dst="2" />
+<file name="UsageRecord.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722383523" remote="130221423790000000" Dst="2" />
+<file name="UsageRecords.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722425516" remote="130221423790000000" Dst="2" />
+<file name="UsageTrigger.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722445523" remote="130221423790000000" Dst="2" />
+<file name="UsageTriggers.php" server="orientation.ssmu.mcgill.ca/html/" local="130221419722485607" remote="130221423790000000" Dst="2" />
+</dwsync>

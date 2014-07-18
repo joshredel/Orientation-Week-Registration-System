@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="participantCrossCheck.php" server="orientation.ssmu.mcgill.ca/html/" local="130208466561405733" remote="130208466570000000" Dst="2" />
+<file name="sendRegistrationOpenInvite.php" server="orientation.ssmu.mcgill.ca/html/" local="130208482910831177" remote="130208482920000000" Dst="2" />
+<file name="sendPaymentFixNotification.php" server="orientation.ssmu.mcgill.ca/html/" local="130211324599439041" remote="130211324670000000" Dst="2" />
+<file name="showPaymentIssues.php" server="orientation.ssmu.mcgill.ca/html/" local="130212384261286609" remote="130212384350000000" Dst="2" />
+<file name="fixRawDataIssue.php" server="orientation.ssmu.mcgill.ca/html/" local="130216935795667388" remote="130217151790000000" Dst="2" />
+<file name=".htaccess" server="orientation.ssmu.mcgill.ca/html/" local="130212312612378254" remote="130212313000000000" Dst="2" />
+<file name="showUnusedIPNs.php" server="orientation.ssmu.mcgill.ca/html/" local="130218476282259920" remote="130218692270000000" Dst="2" />
+<file name="notifyOfNewFeatures.php" server="orientation.ssmu.mcgill.ca/html/" local="130215254706866144" remote="130215254700000000" Dst="2" />
+<file name="showDuplicatePayments.php" server="orientation.ssmu.mcgill.ca/html/" local="130213230218837620" remote="130213230300000000" Dst="2" />
+<file name="statistics.php" server="orientation.ssmu.mcgill.ca/html/" local="130216780307906600" remote="130216996290000000" Dst="2" />
+<file name="eventReport.php" server="orientation.ssmu.mcgill.ca/html/" local="130214190527534983" remote="130214190470000000" Dst="2" />
+<file name="dateOfBirthFix.php" server="orientation.ssmu.mcgill.ca/html/" local="130215868696058979" remote="130216084690000000" Dst="2" />
+<file name="setStaffPassword.php" server="orientation.ssmu.mcgill.ca/html/" local="130220110828037079" remote="130220326820000000" Dst="2" />
+<file name="eveningReminder.php" server="orientation.ssmu.mcgill.ca/html/" local="130223105793275094" remote="130223105780000000" Dst="2" />
+<file name="mailer.php" server="orientation.ssmu.mcgill.ca/html/" local="130222197458978536" remote="130222197690000000" Dst="2" />
+<file name="releaseMyWeekStaff.php" server="orientation.ssmu.mcgill.ca/html/" local="130222808791526685" remote="130222808780000000" Dst="2" />
+</dwsync>

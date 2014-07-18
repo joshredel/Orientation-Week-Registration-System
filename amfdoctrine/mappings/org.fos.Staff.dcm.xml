@@ -1,0 +1,38 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping-2.0.xsd">
+	
+	<entity name="org\fos\Staff" table="Staffs">
+		<id name="id" type="integer" column="StaffID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="userId" column="UserID" type="string" />
+		<field name="displayName" column="DisplayName" type="string" />
+		<field name="lastName" column="LastName" type="string" />
+		<field name="registrationPassword" column="RegistrationPassword" type="string" />
+		<field name="studentId" column="StudentID" type="integer" />
+		<field name="email" column="Email" type="string" />
+		<field name="phoneNumber" column="PhoneNumber" type="string" />
+		<field name="classification" column="Classification" type="string" />
+		<field name="recordedName" column="RecordedName" type="string" />
+		<field name="groupNumber" column="GroupNumber" type="integer" />
+		<field name="lastText" column="LastText" type="string" />
+		<field name="braceletNumberFaculty" column="BraceletNumberFaculty" type="integer" />
+		<field name="pastBraceletNumbersFaculty" column="PastBraceletNumbersFaculty" type="string" />
+		<field name="braceletNumberSsmu" column="BraceletNumberSSMU" type="integer" />
+		<field name="pastBraceletNumbersSsmu" column="PastBraceletNumbersSSMU" type="string" />
+		<field name="pastUserIds" column="PastUserIDs" type="string" />
+		<field name="checkInDate" column="CheckInDate" type="datetime" />
+		<field name="checkedInFaculty" column="CheckedInFaculty" type="integer" />
+		<field name="checkedInSsmu" column="CheckedInSSMU" type="integer" />
+		<field name="hasPaid" column="HasPaid" type="integer" />
+		<field name="messageBuilder" column="MessageBuilder" type="text" />
+		
+		<many-to-one field="event" target-entity="Event" inversed-by="staffs">
+			<join-column name="EventID" referenced-column-name="EventID" />
+		</many-to-one>
+	</entity>
+	
+</doctrine-mapping>

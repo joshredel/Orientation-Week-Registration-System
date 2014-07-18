@@ -1,0 +1,62 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+						http://doctrine-project.org/schemas/orm/doctrine-mapping-2.0.xsd">
+	
+	<entity name="org\fos\Participant" table="Participants">
+		<id name="id" type="integer" column="ParticipantID">
+			<generator strategy="AUTO" />
+		</id>
+		
+		<field name="studentId" column="StudentID" type="integer" />
+		<field name="firstName" column="FirstName" type="string" />
+		<field name="lastName" column="LastName" type="string" />
+		<field name="preferredName" column="PreferredName" type="string" />
+		<field name="preferredPronoun" column="PreferredPronoun" type="string" />
+		<field name="email" column="Email" type="string" />
+		<field name="registrationPassword" column="RegistrationPassword" type="string" />
+		<field name="approvedFacultyCheck" column="ApprovedFacultyCheck" type="integer" />
+		<field name="faculty" column="Faculty" type="string" />
+		<field name="dateOfBirth" column="DateOfBirth" type="datetime" />
+		<field name="shirtSize" column="ShirtSize" type="string" />
+		<field name="dietaryRestrictions" column="DietaryRestrictions" type="text" />
+		<field name="allergies" column="Allergies" type="text" />
+		<field name="physicalNeeds" column="PhysicalNeeds" type="text" />
+		<field name="placeOfOrigin" column="PlaceOfOrigin" type="string" />
+		<field name="enteringYear" column="EnteringYear" type="string" />
+		<field name="registrationDate" column="RegistrationDate" type="datetime" />
+		<field name="livingStyle" column="LivingStyle" type="string" />
+		<field name="froshAddress" column="FroshAddress" type="text" />
+		<field name="customFieldAnswers" column="CustomFieldAnswers" type="text" />
+		<field name="rawRegistrationData" column="RawRegistrationData" type="text" />
+		<field name="phoneNumber" column="PhoneNumber" type="string" />
+		<field name="sentNightlyReminder" column="SentNightlyReminder" type="integer" />
+		<field name="recordedName" column="RecordedName" type="string" />
+		<field name="groupNumber" column="GroupNumber" type="string" />
+		<field name="lastText" column="LastText" type="string" />
+		<field name="messageBuilder" column="MessageBuilder" type="text" />
+		
+		<one-to-many field="checkIns" target-entity="CheckIn" mapped-by="participant" />
+        
+        <one-to-many field="payments" target-entity="Payment" mapped-by="participant" />
+		
+		<one-to-many field="personalEvents" target-entity="PersonalEvent" mapped-by="participant" />
+        
+        <many-to-many field="events" target-entity="Event">
+            <cascade>
+                <cascade-merge />
+                <cascade-persist />
+            </cascade>
+			<join-table name="Events_Participants">
+				<join-columns>
+					<join-column name="ParticipantID" referenced-column-name="ParticipantID" />
+				</join-columns>
+				<inverse-join-columns>
+					<join-column name="EventID" referenced-column-name="EventID" />
+				</inverse-join-columns>
+			</join-table>
+		</many-to-many>
+        
+	</entity>
+	
+</doctrine-mapping>
